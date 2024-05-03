@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  color: #E2725B;
+}
+
+::selection {
+  background-color: rgba(21, 12, 1, 0.1);
+}
+
+/*# sourceMappingURL=index.css.map */
