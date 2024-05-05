@@ -1,0 +1,24 @@
+@use '../variables';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  background: variables.$secondary-background-color;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  &-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &-link {
+    font-size: 1.2rem;
+    font-family: variables.$font-header;
+    color: variables.$text-color;
+  }
+}

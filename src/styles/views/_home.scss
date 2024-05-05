@@ -1,0 +1,73 @@
+@use '../variables';
+@use '../mixins';
+
+.home {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .loading-card {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: variables.$font-body;
+  }
+
+  .error-card {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: variables.$font-body;
+    color: variables.$error-color;
+  }
+
+  .recipe-card {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: variables.$text-color;
+
+    @include mixins.breakpoint(xxl) {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: variables.$font-header;
+    }
+
+    &-image {
+      height: 40rem;
+      width: 40rem;
+    }
+
+    &-info {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 2rem;
+      font-size: 1.1rem;
+      font-family: variables.$font-body;
+
+      &-area, &-category {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .3rem;
+
+        & img {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}

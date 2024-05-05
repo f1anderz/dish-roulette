@@ -1,0 +1,13 @@
+@use '../variables';
+
+.about-page {
+  padding: 2rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 94vh;
+  gap: 1rem;
+  color: variables.$text-color;
+  font-family: variables.$font-body;
+  font-size: 1.2rem;
+}

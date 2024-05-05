@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$accent-color: #E2725B;
+$accent-color: #FE9C1E;
 $background-color: #f5f5f5;
-$transparent-background-color: rgba(245, 245, 245, .9);
+$transparent-background-color: rgba(245, 245, 245, .4);
+$secondary-background-color: #dcdcdc;
+
 $text-color: #333333;
+$error-color: #c20000;
 
 $font-header: 'Montserrat', sans-serif;
 $font-body: 'Open Sans', sans-serif;
