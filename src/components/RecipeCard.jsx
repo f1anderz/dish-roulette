@@ -6,7 +6,7 @@ function RecipeCard({recipe}) {
     let navigate = useNavigate();
 
     function handleRecipe() {
-        navigate('/recipe/' + recipe.idMeal);
+        navigate('/dish-roulette/recipe/' + recipe.idMeal);
     }
 
     return (<div className="recipe-card" onClick={handleRecipe}>

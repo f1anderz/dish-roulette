@@ -10,9 +10,9 @@ function App() {
         <NavBar/>
         <main className="app">
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/recipe/:id" element={<Recipe/>}/>
-                <Route path="/about" element={<About/>}/>
+                <Route path="/dish-roulette" element={<Home/>}/>
+                <Route path="/dish-roulette/recipe/:id" element={<Recipe/>}/>
+                <Route path="/dish-roulette/about" element={<About/>}/>
             </Routes>
         </main>
     </BrowserRouter>);
