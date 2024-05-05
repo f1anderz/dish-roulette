@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  min-height: 94vh;
 
   .loading-card {
     font-size: 2rem;
@@ -24,28 +25,44 @@
   }
 
   .recipe-card {
-    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     color: variables.$text-color;
 
+    @include mixins.breakpoint(s){
+      width: 60%;
+    }
+
     @include mixins.breakpoint(xxl) {
+      width: 35%;
       &:hover {
         cursor: pointer;
       }
     }
 
     &-title {
-      font-size: 1.5rem;
       font-weight: 600;
       font-family: variables.$font-header;
+      font-size: 1.5rem;
     }
 
     &-image {
-      height: 40rem;
-      width: 40rem;
+      @include mixins.breakpoint(xs) {
+        height: 18rem;
+        width: 18rem;
+      }
+
+      @include mixins.breakpoint(s){
+        height: 30rem;
+        width: 30rem;
+      }
+
+      @include mixins.breakpoint(xxl) {
+        height: 40rem;
+        width: 40rem;
+      }
     }
 
     &-info {
@@ -56,6 +73,18 @@
       gap: 2rem;
       font-size: 1.1rem;
       font-family: variables.$font-body;
+
+      @include mixins.breakpoint(xs) {
+        justify-content: center;
+      }
+
+      @include mixins.breakpoint(s){
+        justify-content: center;
+      }
+
+      @include mixins.breakpoint(m){
+        justify-content: center;
+      }
 
       &-area, &-category {
         display: flex;
