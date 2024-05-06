@@ -1,9 +1,7 @@
 function DrButton({loading, setLoading}) {
-    function handleNext() {
+    return (<div className="dr-button" onClick={() => {
         setLoading(!loading);
-    }
-
-    return (<div className="dr-button" onClick={handleNext}>
+    }}>
         Next
     </div>);
 }
