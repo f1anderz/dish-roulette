@@ -1,13 +1,12 @@
 import {useEffect, useState} from 'react';
+import axios from 'axios';
 
 let useFetch = (endpoint, loading) => {
     let [data, setData] = useState(null);
     let [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(endpoint).then(res => {
-            return res.json();
-        }).then(data => {
+        axios.get(endpoint).then(({data}) => {
             setError(null);
             setData(data.meals);
         }).catch(err => {
